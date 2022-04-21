@@ -78,9 +78,14 @@ public class KickSnare {
 				if (snare[i] == 1)
 					if (rand.nextInt(100) < 50)
 						clap[i] = 1;
-			if (rand.nextInt(100) < 50) {
+			int numb = rand.nextInt(100);
+			if (numb < 50) {
 				hey[4] = 1;
 				hey[12] = 1;
+			} else if (numb < 60) {
+				hey[8] = 1;
+				hey[11] = 1;
+				hey[14] = 1;
 			}
 		}
 

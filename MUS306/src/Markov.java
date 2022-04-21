@@ -5,10 +5,11 @@ public class Markov {
 
 	public static void main(String[] args) {
 		
-		
+		//vocal:  15 7 8 9 0 6 15 9 9 14 6 14 9 9 14 9 1 14 14 14 14 14 9 9 9 9 3 14 14 9 14 6 5 2 0 16 9 9 14 14 
 		HipHat hh = new HipHat(true);
 		KickSnare ks = new KickSnare(true);
-		Piano piano = new Piano("E", true);
+		Piano piano = new Piano("Am", true);
+		Vocal vocal = new Vocal();
 		
 		System.out.print("Count:  ");
 		for (int i = 0; i < measure.length; i++) {
@@ -64,6 +65,13 @@ public class Markov {
 		System.out.print("piano:  ");
 		for (int i = 0; i < piano.getPiano().length; i++) {
 			System.out.print(piano.getPiano()[i] + " ");
+
+		}
+		
+		System.out.println("\n");
+		System.out.print("vocal:  ");
+		for (int i = 0; i < vocal.getVocals().length; i++) {
+			System.out.print(vocal.getVocals()[i] + " ");
 
 		}
 	}
